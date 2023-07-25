@@ -1,21 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
     <!-- google EB Garamond and poppins fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="./fontawesome/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/fontawesome.min.css" />
+    <!-- custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "color-5a": "#B68C5A",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- styles -->
+    <style>
+      .eb-garamond {
+        font-family: "EB Garamond", serif;
+      }
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="poppins">
     <header>
-        <div class="contaianer max-w-screen-xl mx-auto px-4 md:px-12 lg:px-24">
-
+      <div class="contaianer max-w-screen-xl mx-auto px-4 md:px-12 lg:px-24">
+        <div class="navbar py-14">
+          <div class="navbar-start">
+            <a class="" href="">
+              <img src="./images/logo2.png" alt="brand logo" />
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home </a></li>
+              <li>
+                <a>
+                  Services
+                  <i class="fa-solid fa-greater-than"></i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  Cases
+                  <i class="fa-solid fa-greater-than"></i>
+                </a>
+              </li>
+              <li>
+                <a>Blog <i class="fa-solid fa-greater-than"></i></a>
+              </li>
+              <li>
+                <a>Contact Us <i class="fa-solid fa-greater-than"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="px-7 py-4 text-lg font-semibold bg-color-5a text-white rounded-lg">Free Consultation</a>
+          </div>
         </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>
